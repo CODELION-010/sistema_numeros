@@ -15,7 +15,7 @@ if ($result && $result->num_rows > 0) {
 
     while ($row = $result->fetch_assoc()) {
         $id = $row['id'];
-        $numero = $row['numero'];
+        $numero = $row['numero']; // <-- Línea 7
         $fecha = $row['fecha']; // Fecha almacenada en la tabla
         $hora = $row['hora_12h']; // Hora en formato de 12 horas almacenada en la tabla
         $retiros = $row['retiros'];

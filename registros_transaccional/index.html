@@ -21,14 +21,16 @@
                 <label for="numero"></label>
                 <input type="number" name="numero" id="numero" required min="300" max="9999999999" maxlength="10">
                 <br><br>
+                <h2>Tipo de Operación</h2>
                 <label id="labelcheck1" for="">Retiro</label>
                 <input id="chec1" type="checkbox" name="retiro" value="1"></input>
                 <label id="labelcheck2" for="">Deposito</label>
                 <input id="chec2" type="checkbox" name="deposito" value="1"></input>
-               
+
+                <h2>Producto</h2>
                 <label id="labelcheck3" for="">Daviplata</label>
                 <input id="chec3" type="checkbox" name="daviplata" value="1"></input>
-                <label id="labelcheck4" for="">Nequi</label>
+                <label id="labelcheck3" for="">Nequi</label>
                 <input id="chec4" type="checkbox" name="nequi" value="1"></input>
 
                 <br><br>
@@ -49,15 +51,15 @@
     <div id="btns_cons">
         <h2>Consultas y Borrado de Movimientos</h2>
         <div class="button-container">
-          <form action="consultar_registros.php" method="POST">
-            <button id="cons_db" type="submit" name="consultar">Consultar registros</button>
-          </form>
-          <form action="borrar_registros.php" method="POST" onsubmit="return confirmarBorrado()">
-            <button id="borrar" type="submit" name="confirmar_borrado">Borrar Registros</button>
-          </form>
+            <form action="consultar_registros.php" method="POST">
+                <button id="cons_db" type="submit" name="consultar">Consultar registros</button>
+            </form>
+            <form action="borrar_registros.php" method="POST" onsubmit="return confirmarBorrado()">
+                <button id="borrar" type="submit" name="confirmar_borrado">Borrar Registros</button>
+            </form>
         </div>
-      </div>
-      
+    </div>
+
     <script src="js/script.js"></script>
 </body>
 
